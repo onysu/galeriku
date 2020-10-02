@@ -2,4 +2,4 @@
 
 ![__](https://user-images.githubusercontent.com/14862922/94947058-3bbbb780-0507-11eb-965f-e614cae28661.png)
 
-<a href="https://onydarrel.github.io/galeriku/">Demo</a>
+<a href="https://onysu.github.io/galeriku/">Demo</a>
