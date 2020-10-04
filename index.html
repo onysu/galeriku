@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="60" />
+    <!-- <meta http-equiv="refresh" content="60" /> -->
     <meta name="keywords" content="belajar html dasar" />
     <meta name="description" content="onydarrell@gmail.com" />
     <title>Gallery</title>
@@ -31,9 +31,9 @@
             display: grid;
             height: 100vh;
             grid-template-columns: 1fr;
-            grid-template-rows: 55px 35px 20px auto 30px;
+            grid-template-rows: 55px 35px 20px auto 20px;
             grid-template-areas: "head" "menu" "marquee" "main" "footer";
-            background: #F0F2F5;
+            /* background: #F0F2F5; */
         }
         
         header {
@@ -150,6 +150,11 @@
         main p {
             font-weight: var(--fw300);
             font-size: 14px;
+        }
+        
+        span {
+            display: grid;
+            align-content: center;
         }
         
         marquee {
