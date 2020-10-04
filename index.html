@@ -202,58 +202,6 @@
                 color: black;
             }
         }
-        /*  */
-        
-        .globe__worldmap,
-        .globe__worldmap__front,
-        .globe__worldmap__back,
-        .globe__sphere {
-            position: absolute;
-        }
-        
-        .globe__worldmap {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 10%);
-        }
-        
-        .globe__worldmap__front,
-        .globe__worldmap__back {
-            width: 1000px;
-            height: 200px;
-        }
-        
-        .backimg3 {
-            background-image: url(http://www.cakecounter.com/globe/blue-inner-light/globe_images/worldmap_2x.svg);
-        }
-        
-        .globe__worldmap__front {
-            animation: textureSpinreverse 8s linear infinite;
-        }
-        
-        .globe__worldmap__back {
-            background-position: 0px -220px;
-            animation: textureSpin 8s linear infinite;
-        }
-        
-        @keyframes textureSpin {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-47.5%);
-            }
-        }
-        
-        @keyframes textureSpinreverse {
-            from {
-                transform: translateX(-47.5%);
-            }
-            to {
-                transform: translateX(0);
-            }
-        }
     </style>
 </head>
 
@@ -274,15 +222,8 @@
                 </div>
 
                 <div id="bulat2">
-                    <!-- <a href=""><img src="img/ony.jpg" alt=""></a> -->
 
-                    <a href="">
-                        <div class="globe__sphere spehere3"></div>
-                        <div class="globe__worldmap">
-                            <div class="globe__worldmap__back backimg3"></div>
-                            <div class="globe__worldmap__front backimg3"></div>
-                        </div>
-                    </a>
+                    <!-- <a href=""></a> -->
 
                     <a href="">
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-dots-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
