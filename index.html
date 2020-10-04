@@ -31,8 +31,8 @@
             display: grid;
             height: 100vh;
             grid-template-columns: 1fr;
-            grid-template-rows: 55px 35px auto 30px;
-            grid-template-areas: "head" "menu" "main" "footer";
+            grid-template-rows: 55px 35px 20px auto 30px;
+            grid-template-areas: "head" "menu" "marquee" "main" "footer";
             /* background: #F0F2F5; */
         }
         
@@ -100,7 +100,11 @@
         
         nav {
             grid-area: menu;
-            background: #F0F2F5;
+            background: -webkit-gradient( linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #ffffff));
+            background: -ms-linear-gradient(bottom, #e6e6e6, #ffffff);
+            background: -moz-linear-gradient(center bottom, #e6e6e6 0%, #ffffff 100%);
+            background: -o-linear-gradient(bottom, #e6e6e6, #ffffff);
+            border-bottom: 1px solid #cccccc;
             display: grid;
             grid-auto-flow: column;
         }
@@ -150,6 +154,16 @@
         }
         
         main p {
+            font-weight: var(--fw300);
+            font-size: 14px;
+        }
+        
+        marquee {
+            grid-area: marquee;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            background-color: #f3f0f0;
             font-weight: var(--fw300);
             font-size: 14px;
         }
@@ -249,11 +263,10 @@
                 <a class="github-button" href="https://github.com/onysu/galeriku/subscription" data-icon="octicon-eye" data-show-count="true" aria-label="Watch onysu/galeriku on GitHub">Watch</a>
             </div>
         </nav>
+        <marquee behavior="" direction="">
+            <p style="color: #65676B;">Kumpulan foto-foto secara random (acak). setiap 60 detik akan me-refresh foto-foto yang lain.</p>
+        </marquee>
         <main>
-            <marquee behavior="" direction="">
-                <p style="color: #65676B;">Kumpulan foto-foto secara random (acak). setiap 60 detik akan me-refresh foto-foto yang lain.</p>
-            </marquee>
-
 
             <div class="konten">
                 <div><img src="https://source.unsplash.com/random/?computer" alt=""></div>
