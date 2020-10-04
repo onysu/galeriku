@@ -124,9 +124,9 @@
             justify-content: end;
             align-content: center;
             grid-auto-flow: column;
-            grid-gap: 15px;
-            padding-right: 15px;
-            font-size: 14px;
+            grid-gap: 10px;
+            padding-right: 10px;
+            /* font-size: 14px; */
         }
         
         #jam {
@@ -194,6 +194,14 @@
         }
         
         @media (max-width: 576px) {
+            .wadah {
+                display: grid;
+                height: 100vh;
+                grid-template-columns: 1fr;
+                grid-template-rows: 55px 35px 20px auto 30px;
+                grid-template-areas: "head" "menu" "marquee" "main" "footer";
+                background: #F0F2F5;
+            }
             .konten {
                 padding: 5px;
                 column-count: 2;
