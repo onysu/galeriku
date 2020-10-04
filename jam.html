@@ -33,7 +33,7 @@
             height: 250px;
             width: 250px;
             border-radius: 50%;
-            box-shadow: -3px -3px 7px #ffff73, 3px 3px 5px rgba(94, 104, 121, 0.2888);
+            box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.3);
         }
         
         .clock::before {
@@ -43,7 +43,8 @@
             height: 220px;
             width: 220px;
             border-radius: 50%;
-            box-shadow: inset -3px -3px 7px #ffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.2888);
+            background: #dde1e7;
+            box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px rgba(94, 104, 121, 0.3);
         }
         
         .clock::after {
@@ -53,7 +54,7 @@
             height: 120px;
             width: 120px;
             border-radius: 50%;
-            box-shadow: -1px -1px 5px #ffff73, 1px 1px 3px rgba(94, 104, 121, 0.2888);
+            box-shadow: -1px -1px 5px #ffffff, 1px 1px 3px rgba(94, 104, 121, 0.3);
         }
         
         .clock .center-nut {
@@ -184,6 +185,34 @@
             border-right: 3px solid transparent;
             border-bottom: 30px solid #e95949;
         }
+        
+        .hr:before {
+            position: absolute;
+            content: '';
+            width: 1px;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-bottom: 30px solid #e95949;
+        }
+        
+        .hr:before {
+            position: absolute;
+            content: '';
+            width: 1px;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-bottom: 35px solid #303030;
+        }
+        
+        .hr:after {
+            position: absolute;
+            content: '';
+            top: 35px;
+            width: 3px;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-bottom: 25px solid #e95949;
+        }
     </style>
 </head>
 
@@ -220,6 +249,23 @@
             <div class="hr"></div>
         </div>
     </div>
+
+    <script>
+        const sec = document.querySelector(".sec");
+        const min = document.querySelector(".min");
+        const hr = document.querySelector(".hr");
+
+        setInterval(function() {
+            let time = new Date();
+            let secs = time.getSeconds() * 6;
+            let mins = time.getMinutes() * 6;
+            let hrs = time.getHours() * 30;
+
+            sec.style.transform = `rotateZ(${secs}deg)`;
+            min.style.transform = `rotateZ(${mins}deg)`;
+            hr.style.transform = `rotateZ(${hrs+(mins/12)}deg)`;
+        });
+    </script>
 </body>
 
 </html>
