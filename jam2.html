@@ -99,12 +99,14 @@
             <span class="second"></span>
             <span class="dot"></span>
         </div>
-        <div id="jam"></div>
+
     </div>
+    <div id="jam"></div>
 
     <script>
         var inc = 1000;
         clock();
+        jam();
 
         function clock() {
             const date = new Date();
@@ -123,12 +125,6 @@
         }
 
         setInterval(clock, inc);
-    </script>
-
-    <script>
-        window.onload = function() {
-            jam();
-        }
 
         function jam() {
             var a = document.getElementById('jam'),
