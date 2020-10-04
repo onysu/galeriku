@@ -9,9 +9,13 @@
     <meta name="description" content="onydarrell@gmail.com" />
     <title>Gallery</title>
     <link rel="shortcut icon" href="img/ony.jpg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <style>
          :root {
             --fw100: 100;
@@ -265,43 +269,49 @@
 
         <main>
             <div class="konten">
-                <div><img src="https://source.unsplash.com/random/?computer" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?girl" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?travel" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?desktop" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?wallpapers" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?programmer" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?coding" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?people" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?nature" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?work-from-home" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?technology" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?sustainability" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?textures-patterns" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?current-events" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?business-work" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?covid-19" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?animals" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?interiors" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?architecture" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?food-drink" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?athletics" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?spirituality" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?health" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?fashion" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?experimental" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?arts-culture" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?history" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?street-photography" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?collections" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?community" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?brands" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?windows" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?xps" alt=""></div>
-                <div><img src="https://source.unsplash.com/random/?raaminka" alt=""></div>
-                <div><img src="https://source.unsplash.com/user/mammoth_beth" alt=""></div>
-                <div><img src="https://source.unsplash.com/user/alipzn" alt=""></div>
-                <div><img src="https://source.unsplash.com/user/taisiia_shestopal" alt=""></div>
+                <p class="imglist" style="max-width: 1000px;">
+
+                    <a href="https://source.unsplash.com/random/?computer" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?computer" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?girl" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?girl" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?travel" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?travel" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?desktop" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?desktop" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?wallpapers" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?wallpapers" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?programmer" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?programmer" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?coding" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?coding" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?people" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?people" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?nature" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?nature" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?work-from-home" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?work-from-home" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?technology" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?technology" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?sustainability" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?sustainability" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?textures-patterns" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?textures-patterns" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?current-events" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?current-events" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?business-work" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?business-work" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?covid-19" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?covid-19" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?animals" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?animals" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?interiors" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?interiors" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?architecture" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?architecture" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?food-drink" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?food-drink" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?athletics" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?athletics" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?spirituality" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?spirituality" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?health" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?health" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?fashion" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?fashion" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?experimental" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?experimental" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?arts-culture" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?arts-culture" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?history" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?history" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?street-photography" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?street-photography" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?collections" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?collections" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?community" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?community" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?brands" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?brands" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?windows" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?windows" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?xps" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?xps" alt=""></a>
+                    <a href="https://source.unsplash.com/random/?raaminka" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/random/?raaminka" alt=""></a>
+                    <a href="https://source.unsplash.com/user/mammoth_beth" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/user/mammoth_beth" alt=""></a>
+                    <a href="https://source.unsplash.com/user/alipzn" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/user/alipzn" alt=""></a>
+                    <a href="https://source.unsplash.com/user/taisiia_shestopal" data-fancybox="images" data-caption=""><img src="https://source.unsplash.com/user/taisiia_shestopal" alt=""></a>
+
+
+
+                </p>
             </div>
         </main>
         <footer>
@@ -310,7 +320,11 @@
     </div>
 
     <!-- javascript -->
+
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- FancyBox -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
     <script>
         window.onload = function() {
             jam();
@@ -333,6 +347,21 @@
             a = a < 10 ? '0' + a : a;
             return a;
         }
+    </script>
+
+    <script>
+        $('[data-fancybox="images"]').fancybox({
+            buttons: [
+                'slideShow',
+                'share',
+                'zoom',
+                'fullScreen',
+                'close'
+            ],
+            thumbs: {
+                autoStart: true
+            }
+        });
     </script>
 </body>
 
