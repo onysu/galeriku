@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EARTH</title>
+    <style>
+        .globe__worldmap,
+        .globe__worldmap__front,
+        .globe__worldmap__back,
+        .globe__sphere {
+            position: absolute;
+        }
+        /* .globe__sphere {
+            width: 200px;
+            height: 200px;
+        } */
+        
+        .globe__worldmap {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+        }
+        
+        .globe__worldmap__front,
+        .globe__worldmap__back {
+            width: 1000px;
+            height: 200px;
+        }
+        
+        .backimg3 {
+            background-image: url(http://www.cakecounter.com/globe/blue-inner-light/globe_images/worldmap_2x.svg);
+        }
+        /* .spehere3 {
+            background-image: url(http://www.cakecounter.com/globe/blue-inner-light/globe_images/sphere.svg) !important;
+        } */
+        
+        .globe__worldmap__front {
+            animation: textureSpinreverse 8s linear infinite;
+        }
+        
+        .globe__worldmap__back {
+            background-position: 0px -220px;
+            animation: textureSpin 8s linear infinite;
+        }
+        
+        @keyframes textureSpin {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-47.5%);
+            }
+        }
+        
+        @keyframes textureSpinreverse {
+            from {
+                transform: translateX(-47.5%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="globe__sphere spehere3"></div>
+    <div class="globe__worldmap">
+        <div class="globe__worldmap__back backimg3"></div>
+        <div class="globe__worldmap__front backimg3"></div>
+    </div>
+</body>
+
+</html>
