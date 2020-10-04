@@ -151,8 +151,7 @@
         
         main p {
             font-weight: var(--fw300);
-            margin-top: 5px;
-            margin-bottom: 10px;
+            font-size: 14px;
         }
         
         footer {
@@ -188,9 +187,7 @@
             }
             main p {
                 font-weight: var(--fw300);
-                font-size: 14px;
-                margin-top: 5px;
-                margin-bottom: 10px;
+                font-size: 12px;
             }
         }
     </style>
@@ -253,7 +250,10 @@
             </div>
         </nav>
         <main>
-            <p style="color: #65676B;">Kumpulan foto-foto secara random (acak). <br> setiap 30 detik akan me-refresh foto-foto yang lain.</p>
+            <marquee behavior="" direction="">
+                <p style="color: #65676B;">Kumpulan foto-foto secara random (acak). setiap 30 detik akan me-refresh foto-foto yang lain.</p>
+            </marquee>
+
 
             <div class="konten">
                 <div><img src="https://source.unsplash.com/random/?computer" alt=""></div>
