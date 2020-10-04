@@ -1,5 +1,5 @@
 # galeriku
 
-![__](https://user-images.githubusercontent.com/14862922/94947058-3bbbb780-0507-11eb-965f-e614cae28661.png)
+![sc](https://user-images.githubusercontent.com/14862922/95010186-81849700-0651-11eb-9d02-764e9cf9cc10.jpg)
 
 <a href="https://onysu.github.io/galeriku">Gallery</a>
