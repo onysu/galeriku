@@ -135,12 +135,6 @@
             font-family: 'Orbitron', sans-serif;
         }
         
-        .far {
-            display: grid;
-            align-content: center;
-            justify-content: center;
-        }
-        
         a {
             color: white;
             text-decoration: none;
@@ -194,20 +188,21 @@
         }
         
         @media (max-width: 576px) {
-            .wadah {
-                display: grid;
-                height: 100vh;
-                grid-template-columns: 1fr;
-                grid-template-rows: 55px 35px 20px auto 30px;
-                grid-template-areas: "head" "menu" "marquee" "main" "footer";
-                background: #F0F2F5;
-            }
             .konten {
                 padding: 5px;
                 column-count: 2;
                 column-gap: 10px;
             }
             main p {
+                font-weight: var(--fw300);
+                font-size: 12px;
+            }
+            marquee {
+                grid-area: marquee;
+                display: grid;
+                align-content: center;
+                justify-content: center;
+                background-color: #f3f0f0;
                 font-weight: var(--fw300);
                 font-size: 12px;
             }
