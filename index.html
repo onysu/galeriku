@@ -32,7 +32,7 @@
             height: 100vh;
             grid-template-columns: 1fr;
             grid-template-rows: 55px 35px 20px auto 20px;
-            grid-template-areas: "head" "menu" "marquee" "main" "footer";
+            grid-template-areas: "head" "menu" "marq" "main" "footer";
             /* background: #F0F2F5; */
         }
         
@@ -147,25 +147,14 @@
             text-align: center;
         }
         
-        marquee p {
-            font-weight: var(--fw300);
-            font-size: 14px;
-            color: #000;
-        }
-        
         span {
             display: grid;
             align-content: center;
         }
         
         marquee {
-            grid-area: marquee;
-            display: grid;
-            align-content: center;
-            justify-content: center;
+            grid-area: marq;
             background-color: #f3f0f0;
-            font-weight: var(--fw300);
-            font-size: 14px;
         }
         
         footer {
@@ -202,11 +191,6 @@
             main p {
                 font-weight: var(--fw300);
                 font-size: 12px;
-            }
-            .konten img {
-                width: 100%;
-                margin-bottom: 5px;
-                border-radius: 5px;
             }
         }
     </style>
@@ -268,11 +252,12 @@
                 <a class="github-button" href="https://github.com/onysu/galeriku/subscription" data-icon="octicon-eye" data-show-count="true" aria-label="Watch onysu/galeriku on GitHub">Watch</a>
             </div>
         </nav>
+
         <marquee behavior="" direction="">
             <p style="color: #65676B;">Kumpulan foto-foto secara random (acak). setiap 60 detik akan me-refresh foto-foto yang lain.</p>
         </marquee>
-        <main>
 
+        <main>
             <div class="konten">
                 <div><img src="https://source.unsplash.com/random/?computer" alt=""></div>
                 <div><img src="https://source.unsplash.com/random/?girl" alt=""></div>
