@@ -4,145 +4,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAM ANALOG</title>
+    <meta http-equiv="refresh" content="30" />
+    <meta name="keywords" content="belajar html dasar" />
+    <meta name="description" content="onydarrell@gmail.com" />
+    <title>Gallery</title>
+    <link rel="shortcut icon" href="img/ony.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <style>
+         :root {
+            --fw100: 100;
+            --fw300: 300;
+            --fw500: 500;
+            --fw700: 700;
+        }
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
         }
         
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 60vh;
-            background: url(img/wa.png);
-            background-position: top;
-            font-family: 'Orbitron', sans-serif;
+        .wadah {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: 55px 35px auto 30px;
+            grid-template-areas: "head" "menu" "main" "footer";
+            /* background: #F0F2F5; */
         }
         
-        .clock {
-            border-radius: 100%;
-            background: linen url(img/jam3.png);
-            background-size: cover;
-            border: 15px solid black;
-            box-shadow: inset 0 0 15px 3px rgba(0, 0, 0, 0.5), 0 20px 20px rgba(0, 0, 0, 0.2);
+        header {
+            grid-area: head;
+            display: grid;
+            min-height: 40px;
+            align-content: center;
+            background: #dde1e7;
+            /* border-bottom: 1px solid #cccccc; */
         }
         
-        .wrap {
-            overflow: hidden;
-            position: relative;
-            width: 250px;
-            height: 250px;
-            border-radius: 100%;
+        #bulat {
+            display: grid;
+            grid-auto-flow: column;
+        }
+        
+        #bulat1 {
+            display: grid;
+            align-content: center;
+            grid-auto-flow: column;
+            justify-self: start;
+            padding-left: 15px;
+            grid-gap: 5px;
+        }
+        
+        #bulat2 {
+            display: grid;
+            align-content: center;
+            grid-auto-flow: column;
+            justify-self: end;
+            padding-right: 15px;
+            grid-gap: 5px;
+        }
+        
+        #bulat1 a {
+            color: #050505;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #e2e2e2;
+            text-align: center;
+            line-height: 45px;
+            font-size: 12px;
+            box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px rgba(94, 104, 121, 0.3);
+        }
+        
+        #bulat2 a {
+            color: #050505;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #dde1e7;
+            text-align: center;
+            line-height: 45px;
+            font-size: 14px;
+            box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px rgba(94, 104, 121, 0.3);
+        }
+        
+        #bulat1 a img {
+            border-radius: 50%;
+            width: 100%;
+            border: 1px solid #cccccc;
+        }
+        
+        nav {
+            grid-area: menu;
+            background: #F0F2F5;
+            display: grid;
+            grid-auto-flow: column;
+        }
+        
+        #logo {
+            display: grid;
+            color: #333;
+            justify-content: start;
+            align-content: center;
+            min-height: 30px;
+            padding-left: 15px;
+            font-size: 14px;
+        }
+        
+        #link {
+            display: grid;
+            justify-content: end;
+            align-content: center;
+            grid-auto-flow: column;
+            grid-gap: 15px;
+            padding-right: 15px;
+            font-size: 14px;
         }
         
         #jam {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 340px;
-            position: absolute;
-            margin-left: 89px;
+            display: grid;
+            align-content: center;
+            font-family: 'Orbitron', sans-serif;
         }
         
-        .minute,
-        .hour {
-            position: absolute;
-            height: 64px;
-            width: 6px;
-            margin: auto;
-            top: -25%;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background: black;
-            transform-origin: bottom;
-            transform: rotate(0deg);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-            z-index: 1;
+        a {
+            color: white;
+            text-decoration: none;
         }
         
-        .minute {
-            position: absolute;
-            height: 100px;
-            width: 4px;
-            top: -39%;
-            left: 0;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-            transform: rotate(90deg);
+        main {
+            grid-area: main;
+            /* background: #F0F2F5; */
+            padding: 5px;
+            text-align: center;
         }
         
-        .second {
-            position: absolute;
-            height: 80px;
-            width: 2px;
-            margin: auto;
-            top: -32%;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            border-radius: 4px;
-            background: #ff4b3e;
-            transform-origin: bottom center;
-            transform: rotate(180deg);
-            z-index: 1;
+        main p {
+            font-weight: var(--fw300);
+            margin-top: 5px;
+            margin-bottom: 10px;
         }
         
-        .dot {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 12px;
-            height: 12px;
-            border-radius: 100%;
-            background: white;
-            border: 2px solid #1b1b1b;
-            margin: auto;
-            z-index: 1;
+        footer {
+            grid-area: footer;
+            display: grid;
+            align-content: center;
+            font-size: 14px;
+            background: -webkit-gradient( linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #ffffff));
+            background: -ms-linear-gradient(bottom, #e6e6e6, #ffffff);
+            background: -moz-linear-gradient(center bottom, #e6e6e6 0%, #ffffff 100%);
+            background: -o-linear-gradient(bottom, #e6e6e6, #ffffff);
+            border-top: 1px solid #cccccc;
+            text-align: center;
+        }
+        
+        .konten {
+            padding: 5px;
+            column-count: 5;
+            column-gap: 10px;
+        }
+        
+        .konten img {
+            width: 100%;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        
+        @media (max-width: 576px) {
+            .konten {
+                padding: 5px;
+                column-count: 2;
+                column-gap: 10px;
+            }
+            main p {
+                font-weight: var(--fw300);
+                font-size: 14px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <div class="clock">
-            <div class="wrap">
-                <span class="hour"></span>
-                <span class="minute"></span>
-                <span class="second"></span>
-                <span class="dot"></span>
-                <span id="jam"></span>
+    <div class="wadah">
+        <header>
+            <div id="bulat">
+
+                <div id="bulat1">
+
+                    <a href=""><img src="img/ony.jpg" alt=""></a>
+                    <a href="">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                      <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    </svg>
+                    </a>
+                </div>
+
+                <div id="bulat2">
+                    <!-- <a href=""><img src="img/ony.jpg" alt=""></a> -->
+                    <a href="">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                    </a>
+                    <a href="">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-dots-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                    </a>
+                    <a href="">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                    </svg>
+                    </a>
+                    <a href="">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                    </a>
+                </div>
+
             </div>
-        </div>
+        </header>
+
+        <nav>
+            <div id="logo">
+                <h1>ONY</h1>
+            </div>
+            <div id="link">
+                <!-- <a href="">Home</a> -->
+                <!-- <a href="">Profil</a> -->
+                <!-- <a href="">Kontak</a> -->
+                <div id="jam"></div>
+                <a class="github-button" href="https://github.com/onysu" data-show-count="true" aria-label="Follow @onydarrel on GitHub">Follow @onysu</a>
+                <a class="github-button" href="https://github.com/onysu/galeriku/subscription" data-icon="octicon-eye" data-show-count="true" aria-label="Watch onysu/galeriku on GitHub">Watch</a>
+            </div>
+        </nav>
+        <main>
+            <p style="color: #65676B;">Kumpulan foto-foto secara random (acak). <br> setiap 30 detik akan me-refresh foto-foto yang lain.</p>
+
+            <div class="konten">
+                <div><img src="https://source.unsplash.com/random/?computer" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?girl" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?travel" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?desktop" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?wallpapers" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?programmer" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?coding" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?people" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?nature" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?work-from-home" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?technology" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?sustainability" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?textures-patterns" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?current-events" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?business-work" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?covid-19" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?animals" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?interiors" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?architecture" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?food-drink" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?athletics" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?spirituality" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?health" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?fashion" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?experimental" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?arts-culture" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?history" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?street-photography" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?collections" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?community" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?brands" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?windows" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?xps" alt=""></div>
+                <div><img src="https://source.unsplash.com/random/?raaminka" alt=""></div>
+                <div><img src="https://source.unsplash.com/user/mammoth_beth" alt=""></div>
+                <div><img src="https://source.unsplash.com/user/alipzn" alt=""></div>
+                <div><img src="https://source.unsplash.com/user/taisiia_shestopal" alt=""></div>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright by <a style="color: blue;" href="https://www.facebook.com/onydarrell/">Ony</a> September &copy; 2020</p>
+        </footer>
     </div>
 
+    <!-- javascript -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script>
-        var inc = 1000;
-        clock();
-        jam();
-
-        function clock() {
-            const date = new Date();
-
-            const hours = ((date.getHours() + 11) % 12 + 1);
-            const minutes = date.getMinutes();
-            const seconds = date.getSeconds();
-
-            const hour = hours * 30;
-            const minute = minutes * 6;
-            const second = seconds * 6;
-
-            document.querySelector('.hour').style.transform = `rotate(${hour+(minute/12)}deg)`
-            document.querySelector('.minute').style.transform = `rotate(${minute}deg)`
-            document.querySelector('.second').style.transform = `rotate(${second}deg)`
+        window.onload = function() {
+            jam();
         }
-
-        setInterval(clock, inc);
 
         function jam() {
             var a = document.getElementById('jam'),
