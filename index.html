@@ -39,6 +39,11 @@
             grid-template-areas: "head" "menu" "marq" "main" "footer";
         }
         
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
         header {
             position: fixed;
             width: 100%;
@@ -159,11 +164,6 @@
             font-family: 'Orbitron', sans-serif;
         }
         
-        a {
-            color: white;
-            text-decoration: none;
-        }
-        
         main {
             grid-area: main;
             padding: 5px;
@@ -173,20 +173,6 @@
         span {
             display: grid;
             align-content: center;
-        }
-        
-        footer {
-            grid-area: footer;
-            display: grid;
-            align-content: center;
-            font-size: 14px;
-            min-height: 20px;
-            background: -webkit-gradient( linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #ffffff));
-            background: -ms-linear-gradient(bottom, #e6e6e6, #ffffff);
-            background: -moz-linear-gradient(center bottom, #e6e6e6 0%, #ffffff 100%);
-            background: -o-linear-gradient(bottom, #e6e6e6, #ffffff);
-            border-top: 1px solid #cccccc;
-            text-align: center;
         }
         
         .konten {
@@ -199,20 +185,6 @@
             width: 100%;
             margin-bottom: 5px;
             border-radius: 5px;
-        }
-        
-        @media (max-width: 576px) {
-            .konten {
-                padding: 5px;
-                column-count: 2;
-                column-gap: 10px;
-            }
-            marquee p {
-                font-weight: var(--fw500);
-                font-size: 12px;
-                margin-top: 3px;
-                color: red;
-            }
         }
         
         .bumi {
@@ -234,6 +206,34 @@
             }
             100% {
                 background-position: 719px 0;
+            }
+        }
+        
+        footer {
+            grid-area: footer;
+            display: grid;
+            align-content: center;
+            font-size: 14px;
+            min-height: 20px;
+            background: -webkit-gradient( linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #ffffff));
+            background: -ms-linear-gradient(bottom, #e6e6e6, #ffffff);
+            background: -moz-linear-gradient(center bottom, #e6e6e6 0%, #ffffff 100%);
+            background: -o-linear-gradient(bottom, #e6e6e6, #ffffff);
+            border-top: 1px solid #cccccc;
+            text-align: center;
+        }
+        
+        @media (max-width: 576px) {
+            .konten {
+                padding: 5px;
+                column-count: 2;
+                column-gap: 10px;
+            }
+            marquee p {
+                font-weight: var(--fw500);
+                font-size: 12px;
+                margin-top: 3px;
+                color: red;
             }
         }
     </style>
