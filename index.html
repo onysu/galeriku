@@ -34,7 +34,7 @@
         .wadah {
             display: grid;
             height: 100vh;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(auto-fit, 1fr);
             grid-template-rows: 55px 35px 20px auto 20px;
             grid-template-areas: "head" "menu" "marq" "main" "footer";
         }
@@ -177,7 +177,7 @@
         }
         
         .konten {
-            padding: 5px;
+            padding: 7px 5px 7px 5px;
             column-count: 5;
             column-gap: 10px;
         }
