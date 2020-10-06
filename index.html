@@ -132,13 +132,12 @@
             background-color: #f3f0f0;
             box-shadow: 0 3px 4px rgba(94, 104, 121, 0.5);
         }
-        
-        marquee p {
+        /* marquee p {
             font-weight: var(--fw300);
             font-size: 12px;
             margin-top: 2px;
             color: black;
-        }
+        } */
         
         #logo {
             display: grid;
@@ -175,12 +174,11 @@
             display: grid;
             align-content: center;
         }
-        
-        .konten {
+        /* .konten {
             padding: 7px 5px 7px 5px;
             column-count: 5;
             column-gap: 10px;
-        }
+        } */
         
         .konten img {
             width: 100%;
@@ -224,17 +222,26 @@
             text-align: center;
         }
         
-        @media (min-width: 240px) and (max-width: 360px) {
+        @media (min-width: 240px) and (max-width: 358.98px) {
             .konten {
                 padding: 3px;
-                column-count: 2;
+                column-count: 1;
                 column-gap: 10px;
             }
             marquee p {
-                font-weight: var(--fw500);
+                font-weight: var(--fw300);
                 font-size: 10px;
                 margin-top: 3px;
                 color: red;
+            }
+            #bulat1 {
+                display: none;
+            }
+            #jam {
+                display: none;
+            }
+            #logo {
+                display: none;
             }
         }
         
@@ -250,9 +257,12 @@
                 margin-top: 3px;
                 color: red;
             }
+            #logo i {
+                display: none;
+            }
         }
         
-        @media (min-width: 575.98px) and (max-width: 768px) {
+        @media (min-width: 576px) and (max-width: 767.98px) {
             .konten {
                 padding: 5px;
                 column-count: 3;
@@ -280,7 +290,7 @@
             }
         }
         
-        @media (min-width: 991.98px) and (max-width: 1199.98px) {
+        @media (min-width: 992px) and (max-width: 1199.98px) {
             .konten {
                 padding: 5px;
                 column-count: 5;
@@ -294,7 +304,7 @@
             }
         }
         
-        @media (min-width: 1199.98px) and (max-width: 1399.98px) {
+        @media (min-width: 1200px) and (max-width: 1399.98px) {
             .konten {
                 padding: 5px;
                 column-count: 6;
@@ -308,7 +318,7 @@
             }
         }
         
-        @media (min-width: 1399.98px) and (max-width: 2000px) {
+        @media (min-width: 1400px) and (max-width: 2000px) {
             .konten {
                 padding: 5px;
                 column-count: 7;
