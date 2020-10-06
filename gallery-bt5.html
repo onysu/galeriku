@@ -20,13 +20,18 @@
         .gallery {
             display: grid;
             height: 100vh;
-            grid-template-columns: repeat(auto-fit, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
         
         img {
             width: 100%;
             margin-bottom: 5px;
         }
+        /* .image {
+            column-count: 4;
+            column-gap: 0;
+            padding: 5px;
+        } */
         
         @media (min-width: 240px) and (max-width: 358.98px) {
             .image {
