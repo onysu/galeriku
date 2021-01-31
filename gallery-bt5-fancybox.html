@@ -24,13 +24,24 @@
       height: 100vh;
     }
 
-    img {
-      width: 100%;
-      margin-bottom: 5px;
-      border-radius: 5px;
+    .image {
+      column-count: 5;
+      column-gap: 15px;
+      padding: 15px;
     }
 
-    @media (min-width: 240px) and (max-width: 358.98px) {
+    img {
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 15px;
+    }
+
+    img:hover {
+      transition: .2s linear;
+      transform: scale(1.3);
+    }
+
+    /* @media (min-width: 240px) and (max-width: 358.98px) {
       .image {
         column-count: 1;
         column-gap: 5px;
@@ -84,43 +95,54 @@
         column-gap: 5px;
         padding: 5px;
       }
-    }
+    } */
   </style>
 </head>
 
 <body>
-  <div class="gallery">
-    <div class="image">
+  <div class="container">
+    <div class="gallery">
 
-      <a href="https://source.unsplash.com/random/?computer" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?computer" alt=""></a>
-      <a href="https://source.unsplash.com/random/?girl" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?girl" alt=""></a>
-      <a href="https://source.unsplash.com/random/?travel" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?travel" alt=""></a>
-      <a href="https://source.unsplash.com/random/?desktop" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?desktop" alt=""></a>
-      <a href="https://source.unsplash.com/random/?wallpapers" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?wallpapers" alt=""></a>
-      <a href="https://source.unsplash.com/random/?programmer" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?programmer" alt=""></a>
-      <a href="https://source.unsplash.com/random/?coding" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?coding" alt=""></a>
-      <a href="https://source.unsplash.com/random/?people" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?people" alt=""></a>
-      <a href="https://source.unsplash.com/random/?nature" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?nature" alt=""></a>
-      <a href="https://source.unsplash.com/random/?work-from-home" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?work-from-home" alt=""></a>
-      <a href="https://source.unsplash.com/random/?technology" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?technology" alt=""></a>
-      <a href="https://source.unsplash.com/random/?sustainability" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?sustainability" alt=""></a>
-      <a href="https://source.unsplash.com/random/?textures-patterns" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?textures-patterns" alt=""></a>
-      <a href="https://source.unsplash.com/random/?current-events" data-fancybox="images" data-caption=""><img
-          src="https://source.unsplash.com/random/?current-events" alt=""></a>
-      <a href="https://source.unsplash.com/random/?business-work" data-fancybox="images" data-caption=""><img
+      <div class="image">
+        <a href="https://source.unsplash.com/random/?computer" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?computer" alt=""></a>
+      </div>
+
+      <div class="image">
+        <a href="https://source.unsplash.com/random/?girl" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?girl" alt=""></a>
+      </div>
+      <!-- <div class="image">
+
+        <a href="https://source.unsplash.com/random/?computer" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?computer" alt=""></a>
+        <a href="https://source.unsplash.com/random/?girl" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?girl" alt=""></a>
+        <a href="https://source.unsplash.com/random/?travel" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?travel" alt=""></a>
+        <a href="https://source.unsplash.com/random/?desktop" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?desktop" alt=""></a>
+        <a href="https://source.unsplash.com/random/?wallpapers" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?wallpapers" alt=""></a>
+        <a href="https://source.unsplash.com/random/?programmer" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?programmer" alt=""></a>
+        <a href="https://source.unsplash.com/random/?coding" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?coding" alt=""></a>
+        <a href="https://source.unsplash.com/random/?people" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?people" alt=""></a>
+        <a href="https://source.unsplash.com/random/?nature" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?nature" alt=""></a>
+        <a href="https://source.unsplash.com/random/?work-from-home" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?work-from-home" alt=""></a>
+        <a href="https://source.unsplash.com/random/?technology" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?technology" alt=""></a>
+        <a href="https://source.unsplash.com/random/?sustainability" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?sustainability" alt=""></a>
+        <a href="https://source.unsplash.com/random/?textures-patterns" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?textures-patterns" alt=""></a>
+        <a href="https://source.unsplash.com/random/?current-events" data-fancybox="images" data-caption=""><img
+            src="https://source.unsplash.com/random/?current-events" alt=""></a>
+        <a href="https://source.unsplash.com/random/?business-work" data-fancybox="images" data-caption=""><img
           src="https://source.unsplash.com/random/?business-work" alt=""></a>
       <a href="https://source.unsplash.com/random/?covid-19" data-fancybox="images" data-caption=""><img
           src="https://source.unsplash.com/random/?covid-19" alt=""></a>
@@ -167,6 +189,7 @@
       <a href="https://source.unsplash.com/user/taisiia_shestopal" data-fancybox="images" data-caption=""><img
           src="https://source.unsplash.com/user/taisiia_shestopal" alt=""></a>
 
+      </div> -->
     </div>
   </div>
 
