@@ -4,5 +4,4 @@
 
 <ul>
     <li><a href="https://onysu.github.io/galeriku">Demo Gallery</a></li>
-    <li><a href="https://onysu.github.io/galeriku/gallery-bt5-fancybox.html">Demo Gallery with FancyBox</a></li>
 </ul>
